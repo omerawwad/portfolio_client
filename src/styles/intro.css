@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.intro {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 5px 15px;
+  margin: 50px 0;
+}
+
+.into-name-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+}
+
+.intro h1 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.link-icon {
+  font-size: 1.2rem;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.link-icon:hover {
+  color: #666;
+}
+
+.link-icon:active {
+  color: #222;
+}
+
+.intro h2 {
+  font-size: 11px;
+  color: #666;
+}
+.intro span {
+  font-size: 10px;
+  color: #666;
+  padding: 5px 0;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 5px 15px;
+  align-items: left;
+  color: #666;
+}
+
+.section-title {
+  font-size: 15px;
+  color: #222;
+  margin: 20px 0;
+}
+
+.skill-category {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px 15px;
+  margin: 10px 0;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin: 0 5px;
+  text-decoration: none;
+}
