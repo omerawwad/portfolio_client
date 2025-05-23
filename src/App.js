@@ -64,7 +64,7 @@ const NAV_LINKS = [
 function App() {
   return (
     <>
-      <NavBar nav_links={NAV_LINKS} />
+      {/* <NavBar nav_links={NAV_LINKS} /> */}
       <Intro profile={Profile} links={LINKS} skills={skills} />
     </>
   );
