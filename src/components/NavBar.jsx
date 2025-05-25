@@ -1,12 +1,16 @@
 import "../App.css";
 import "../styles/navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExternalLink } from "./graphics/ExternalLink";
 import { Link } from "react-router-dom";
 
 function NavBar({ nav_links, resume_link, active_link }) {
   //   const [selectedLink, setSelectedLink] = useState(nav_links[0].name);
   const [selectedLink, setSelectedLink] = useState(active_link);
+
+  useEffect(() => {
+    setSelectedLink(active_link);
+  }, [active_link]);
 
   const handleLinkClick = (linkName) => {
     setSelectedLink(linkName);
