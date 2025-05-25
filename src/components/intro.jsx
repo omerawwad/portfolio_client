@@ -2,15 +2,17 @@ import SKILLS_ICONS from "../data/skills_icons";
 import "../App.css";
 import "../styles/intro.css";
 
+import { TfiEmail } from "react-icons/tfi";
+
 import { useState } from "react";
 
-function Intro({ profile, links, skills }) {
+function Intro({ profile, links, skills, email }) {
   return (
     <div className="container">
       <div className="intro">
         <div className="into-name-bar">
           <h1>{profile.name}</h1>
-          <LinkList links={links} />
+          <LinkList links={links} email={email} />
         </div>
         <h2>{profile.title}</h2>
         <span>{profile.description}</span>
@@ -20,9 +22,18 @@ function Intro({ profile, links, skills }) {
   );
 }
 
-function LinkList({ links }) {
+function LinkList({ links, email }) {
   return (
     <div className="links">
+      <a
+        key="email"
+        href={email}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <TfiEmail className="link-icon" style={{ verticalAlign: "top" }} />
+      </a>
       {links.map((link) => (
         <a
           key={link.name}

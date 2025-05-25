@@ -25,7 +25,12 @@ const router = createBrowserRouter([
           resume_link={NAV_LINKS.resume_link}
           active_link={NAV_LINKS.links[0].name}
         />
-        <Intro profile={PROFILE} links={LINKS.links} skills={SKILLS} />
+        <Intro
+          profile={PROFILE}
+          links={LINKS.links}
+          skills={SKILLS}
+          email={LINKS.email}
+        />
       </>
     ),
   },
