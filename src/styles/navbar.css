@@ -1,6 +1,7 @@
 .navbar {
   /* background-color: #333; */
   width: 100%;
+  /* margin-top: 30px; */
 }
 
 .nav-links {
@@ -33,4 +34,18 @@
   padding-bottom: 5px;
   margin-bottom: -2px;
   transition: all 0.3s ease;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  margin-bottom: -2px;
+  font-weight: 600;
+}
+
+.external-link {
+  margin: 0 5px;
 }

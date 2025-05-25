@@ -1,71 +1,66 @@
-import logo from "./images/pp_01.jpg";
+import PROFILE from "./data/profile.json";
+import SKILLS from "./data/skills.json";
+import LINKS from "./data/links.json";
+import CERTIFICATES from "./data/certificates.json";
+import PROJECTS from "./data/projects";
+
+import NAV_LINKS from "./data/nav_links.json";
+
 import "./App.css";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Intro from "./components/intro";
 import NavBar from "./components/NavBar";
+import Certificates from "./components/education/certificates";
+import Projects from "./components/projects/projects";
 
-const skills = {
-  backend: [
-    { name: "spring-boot", icon: "devicon-spring-plain" },
-    { name: "django", icon: "devicon-django-plain" },
-    { name: "express", icon: "devicon-express-original" },
-    { name: "dotnet", icon: "devicon-dotnetcore-plain" },
-  ],
-  frontend: [
-    { name: "react", icon: "devicon-react-original" },
-    { name: "angular", icon: "devicon-angularjs-plain" },
-  ],
-  database: [
-    { name: "postgresql", icon: "devicon-postgresql-plain" },
-    { name: "mongodb", icon: "devicon-mongodb-plain" },
-    { name: "mysql", icon: "devicon-mysql-plain" },
-  ],
-  languages: [
-    { name: "java", icon: "devicon-java-plain" },
-    { name: "typescript", icon: "devicon-typescript-plain" },
-    { name: "python", icon: "devicon-python-plain" },
-    { name: "cpp", icon: "devicon-cplusplus-plain" },
-    { name: "javascript", icon: "devicon-javascript-plain" },
-    { name: "c#", icon: "devicon-csharp-line" },
-    { name: "go", icon: "devicon-go-plain" },
-  ],
-};
-
-const Profile = {
-  name: "Omer Awwad",
-  title: "Software Engineer",
-  description:
-    "I am a Software Engineer graduate from Faculty of Engineerin Ain Shams University with experience in building web applications and mobile applications.",
-  avatar: logo,
-};
-
-const LINKS = [
+const router = createBrowserRouter([
   {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/omer-ashraf/",
-    icon: "devicon-linkedin-plain",
+    path: "/",
+    element: (
+      <>
+        <NavBar
+          nav_links={NAV_LINKS.links}
+          resume_link={NAV_LINKS.resume_link}
+          active_link={NAV_LINKS.links[0].name}
+        />
+        <Intro profile={PROFILE} links={LINKS.links} skills={SKILLS} />
+      </>
+    ),
   },
   {
-    name: "GitHub",
-    url: "https://github.com/omerawwad",
-    icon: "devicon-github-original",
+    path: "/education",
+    element: (
+      <>
+        <NavBar
+          nav_links={NAV_LINKS.links}
+          resume_link={NAV_LINKS.resume_link}
+          active_link={NAV_LINKS.links[1].name}
+        />
+        <Certificates certificates={CERTIFICATES.certificates} />
+      </>
+    ),
   },
-];
-
-const NAV_LINKS = [
-  { name: "Brief", url: "#" },
-  { name: "Education", url: "#" },
-  { name: "Projects", url: "#" },
   {
-    name: "Resume",
-    url: "",
+    path: "/projects",
+    element: (
+      <>
+        <NavBar
+          nav_links={NAV_LINKS.links}
+          resume_link={NAV_LINKS.resume_link}
+          active_link={NAV_LINKS.links[2].name}
+        />
+        <Projects projects={PROJECTS.projects} />
+      </>
+    ),
   },
-];
+]);
 
 function App() {
   return (
     <>
-      {/* <NavBar nav_links={NAV_LINKS} /> */}
-      <Intro profile={Profile} links={LINKS} skills={skills} />
+      <RouterProvider router={router} />
     </>
   );
 }

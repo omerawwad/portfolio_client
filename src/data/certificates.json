@@ -1,0 +1,81 @@
+{
+  "certificates": [
+    {
+      "name": "BSc Computer Engineering",
+      "issuer": "Faculty of Engineering, Ain Shams University",
+      "description": "Graduated with a Bachelor's degree in Computer Engineering.",
+      "url": "",
+      "skills": []
+    },
+    {
+      "name": "The Complete Full-Stack Web Development Bootcamp",
+      "issuer": "London App Brewery",
+      "description": "Full-Stack MERN Nodejs, Reacjs, Mongo and also PostgreSQL with Angela Yu",
+      "url": "mern",
+      "skills": [
+        "react",
+        "javascript",
+        "express",
+        "mongodb",
+        "postgresql",
+        "git"
+      ]
+    },
+    {
+      "name": "Spring Certified Professional",
+      "issuer": "Spring Academy",
+      "description": "expertise in Spring and Spring Boot, demonstrating their ability to build and deliver production-ready applications. It includes Spring Security, Spring Data and Spring Microservices.",
+      "url": "",
+      "skills": ["java", "spring-boot", "postgresql", "swagger", "docker"]
+    },
+    {
+      "name": "The Ultimate React Course",
+      "issuer": "Jonas Schmedtmann",
+      "description": "Modern React  advanced! Next.js, Context API, React Query, Redux, Tailwind, advanced patterns",
+      "url": "",
+      "skills": ["react", "typescript", "redux", "nextjs"]
+    },
+    {
+      "name": "CS50’s Web Programming",
+      "issuer": "Harvard CS50",
+      "description": "diving more deeply into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security, and user experience. Through 7 projects, students learn to write and use APIs, create interactive UIs",
+      "url": "",
+      "skills": ["django", "react", "postgresql", "git"]
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "issuer": "Coursera",
+      "description": "Supervised Machine Learning: Regression and Classification",
+      "url": "supMl",
+      "skills": ["python", "pandas", "numpy", "scikit-learn"]
+    },
+    {
+      "name": "Postman API Expert",
+      "issuer": "Postman",
+      "description": "Postman API Expert certification demonstrates proficiency in using Postman for API development.",
+      "url": "postman",
+      "skills": ["postman", "javascript"]
+    },
+    {
+      "name": "Angular 4 Pro",
+      "issuer": "Mosh Hamedani",
+      "description": "Angular 4 Pro course by Mosh Hamedani covers advanced Angular concepts and best practices.",
+      "url": "",
+      "skills": ["angular", "typescript", "javascript"]
+    },
+    {
+      "name": "Advanced Embedded System Training ",
+      "issuer": "Edges For Training",
+      "description": "Worked with Micro controller, setting up I/O, Embedded C, Simulation, Flashing and Running.",
+      "url": "edges",
+      "skills": ["embeddedc", "cpp"]
+    },
+    {
+      "name": "Datacenter Virtualization",
+      "issuer": "NTI",
+      "description": "Got comfortable with Linux CLI, Red Hat Linux, AWS fundamentals, AWS Practitioner contents.",
+      "url": "nti",
+      "skills": ["linux", "aws"]
+    }
+  ]
+}

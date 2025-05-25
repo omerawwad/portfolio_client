@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "name": "Review Me",
+      "description": "Fully Designed and implemented over 30 RESTful JSON APIs including fetching items, fetching reviews, adding items, create review, handling sessions, adding questions and answers, searching, handling notifications and other features. Fully Implement Front-End using react.js, fetching real-time data, sync state and session with the backend.",
+      "url": "https://github.com/omerawwad/reviewme",
+      "skills": ["python", "django", "react", "postgresql"]
+    },
+    {
+      "name": "Portfolio",
+      "description": "My personal portfolio website showcasing my projects and skills.",
+      "url": "https://github.com/omerawwad/portfolio",
+      "skills": ["react", "javascript", "node", "express", "mongodb"]
+    },
+    {
+      "name": "Med Track",
+      "description": "Website that allow patients to track their, easily find documents and doctor’s notes by organizing all the scans, prescriptions, Tests, and other documents and notes saving their dates. It can sort them and export reports, You can search on certain paper or test, track tests results. Designed and Implemented the Backend with Spring Boot with PstgreSQL with JWT Authentication, Authorization roles and complete managment to sessions and the Frontend with Angular.",
+      "url": "https://github.com/omerawwad/medtrack",
+      "skills": [
+        "spring-boot",
+        "postgresql",
+        "java",
+        "angular",
+        "typescript",
+        "docker"
+      ]
+    },
+    {
+      "name": "Bena",
+      "description": "Fully Functional Shared Trips Planning And Places Discovery App. The app’s backend is implemented with python since it uses machine learning techniques in places recommendation relevant to user interactions, elastic search and deployed on AWS EC2 after Docerization. The frontend is implemented in React Native with interactive easy user experience and several features.",
+      "url": "https://github.com/omerawwad/bena-all-parts",
+      "skills": ["react", "python", "postgresql", "docker", "aws", "fastapi"]
+    },
+    {
+      "name": "Embedded Car Feature Automation System",
+      "description": "using FreeRTOS to implement car signals, automatic window, and other features.",
+      "url": "",
+      "skills": ["embeddedc", "freertos"]
+    },
+    {
+      "name": "Health Care Stroke Prediction ",
+      "description": "It predict stroke risk accourding to patient’s data with models Regression, Decision Tree, KNN, Naive Bayes.",
+      "url": "",
+      "skills": ["python", "pandas", "numpy", "scikit-learn"]
+    },
+    {
+      "name": "Family Cash Cards",
+      "description": "A web application that allows family members to manage their cash cards, track expenses, and view transaction history.",
+      "url": "https://github.com/omerawwad/familycashcards",
+      "skills": ["java", "spring-boot", "postgresql", "docker"]
+    }
+  ]
+}

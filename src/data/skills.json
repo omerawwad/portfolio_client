@@ -1,0 +1,23 @@
+{
+  "backend": [
+    { "name": "spring-boot" },
+    { "name": "django" },
+    { "name": "express" },
+    { "name": "dotnet" }
+  ],
+  "frontend": [{ "name": "react" }, { "name": "angular" }],
+  "database": [
+    { "name": "postgresql" },
+    { "name": "mongodb" },
+    { "name": "mysql" }
+  ],
+  "languages": [
+    { "name": "java" },
+    { "name": "typescript" },
+    { "name": "python" },
+    { "name": "cpp" },
+    { "name": "javascript" },
+    { "name": "c#" },
+    { "name": "go" }
+  ]
+}

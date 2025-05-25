@@ -16,9 +16,9 @@
   margin: 50px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   .intro {
-    max-width: 450px; /* For tablets and desktops */
+    max-width: 450px;
   }
 }
 

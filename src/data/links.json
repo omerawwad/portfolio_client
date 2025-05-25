@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/omer-ashraf/",
+      "icon": "devicon-linkedin-plain"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/omerawwad",
+      "icon": "devicon-github-original"
+    }
+  ]
+}

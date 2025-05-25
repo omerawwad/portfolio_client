@@ -1,5 +1,8 @@
+import SKILLS_ICONS from "../data/skills_icons";
 import "../App.css";
 import "../styles/intro.css";
+
+import { useState } from "react";
 
 function Intro({ profile, links, skills }) {
   return (
@@ -66,9 +69,17 @@ function SkillCategory({ category, skills }) {
 }
 
 function SkillIcon({ skill }) {
+  const [isHovered, setIsHovered] = useState(false);
+  // console.log(isHovered);
   return (
-    <div className="skill-icon">
-      <i className={skill.icon}></i>
+    <div
+      className="skill-icon colored"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <i
+        className={`${SKILLS_ICONS[skill.name]} ${isHovered ? "colored" : ""}`}
+      ></i>
     </div>
   );
 }

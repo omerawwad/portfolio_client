@@ -1,10 +1,12 @@
 import "../App.css";
 import "../styles/navbar.css";
 import { useState } from "react";
+import { ExternalLink } from "./graphics/ExternalLink";
+import { Link } from "react-router-dom";
 
-function NavBar({ nav_links }) {
+function NavBar({ nav_links, resume_link, active_link }) {
   //   const [selectedLink, setSelectedLink] = useState(nav_links[0].name);
-  const [selectedLink, setSelectedLink] = useState(nav_links[0].name);
+  const [selectedLink, setSelectedLink] = useState(active_link);
 
   const handleLinkClick = (linkName) => {
     setSelectedLink(linkName);
@@ -21,6 +23,17 @@ function NavBar({ nav_links }) {
             onClick={() => handleLinkClick(nav_link.name)}
           />
         ))}
+        <a
+          href={resume_link}
+          className="resume-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="resume">
+            Resume
+            <ExternalLink className="external-link" />
+          </span>
+        </a>
       </div>
     </div>
   );
@@ -28,12 +41,11 @@ function NavBar({ nav_links }) {
 
 function NavLink({ nav_link, isSelectedLink, onClick }) {
   return (
-    <span
-      className={`nav-link ${isSelectedLink ? "selected" : ""}`}
-      onClick={onClick}
-    >
-      {nav_link.name}
-    </span>
+    <Link className="nav-link" to={nav_link.url} onClick={onClick}>
+      <span className={` ${isSelectedLink ? "selected" : ""}`}>
+        {nav_link.name}
+      </span>
+    </Link>
   );
 }
 

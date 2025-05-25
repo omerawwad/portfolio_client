@@ -1,0 +1,71 @@
+.projects {
+  margin: 50px 20px;
+}
+.project {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 20px 20px 10px 20px;
+  margin: 30px 0 0 0;
+  border-bottom: #222 solid 3px;
+  border-right: #222 solid 3px;
+  border-left: #888 solid 3px;
+  border-top: #888 solid 3px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    max-width: 450px;
+  }
+}
+
+.project-link {
+  text-decoration: none;
+  color: #222;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.project-header i {
+  padding: 0 10px;
+  color: #777;
+}
+
+.project-title {
+  font-size: 15px;
+  color: #444;
+}
+
+.project-title:hover {
+  color: #222;
+}
+
+.project-description {
+  font-size: 12px;
+  color: #666;
+}
+
+.project .skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px 5px;
+  border-top: #222 solid 1px;
+  margin: 10px 0 0 0;
+}
+
+.project .skill-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
